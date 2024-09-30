@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+    background-color:darkkhaki;
+    border: 5px solid black;
+    border-radius: 10px;
+    /* infinite et alternate permettent de jouer l'animation indéfiniment et 
+    en alternance */
+    animation: deplacement 2s infinite alternate;
+}
+
+@keyframes deplacement {
+    0% {
+        transform: translate(0); 
+    }
+    50% {
+        transform: translateX(300px) rotate(0.5turn);
+    }
+    100% {
+        transform: translate(300px,200px) rotate(1turn);
+    }
+}
